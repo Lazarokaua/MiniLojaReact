@@ -1,0 +1,28 @@
+.skeleton {
+    background-color: var(--skeleton-bg);
+    border-radius: 12px;
+}
+
+.productCard {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+
+.cardImagePlaceholder {
+  aspect-ratio: 1 / 1;
+  background-color: var(--skeleton-bg);
+}
+
+.cardContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

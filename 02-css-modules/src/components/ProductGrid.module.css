@@ -1,0 +1,25 @@
+/* 4. Product Grid */
+.productGrid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 7rem 2rem 2rem; /* Top padding to account for fixed navbar */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsive Grid Breakpoints */
+@media (max-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    padding: 7rem 1rem 1rem;
+  }
+}
